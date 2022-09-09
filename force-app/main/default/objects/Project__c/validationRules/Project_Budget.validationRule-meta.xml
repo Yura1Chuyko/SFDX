@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Budget</fullName>
+    <active>true</active>
+    <errorConditionFormula>Is_Billable__c &amp;&amp; (!(Project_Budget__c &gt;0) || ISBLANK(Project_Budget__c))</errorConditionFormula>
+    <errorDisplayField>Project_Budget__c</errorDisplayField>
+    <errorMessage>Project Budget should be populated!!!</errorMessage>
+</ValidationRule>
